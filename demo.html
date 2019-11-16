@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<!-- 重学js	 -->
+	<script>
+		//循环打印三角形
+		for(var i=0;i<6;i++){
+			for(var j=0;j<=i;j++){
+				document.write('☆');
+			}
+			document.write('<br/>');
+		}
+		document.write('<hr/>');
+		//打印乘法口诀表
+		for(var i=1;i<=9;i++){
+			for(var j=1;j<=i;j++){
+				document.write(i+'*'+j+'='+i*j+'&nbsp;&nbsp;');
+			}
+			document.write('<br/>');
+		}
+		document.write('<hr/>');
+		//打印乘法口诀表（表格版）
+		document.write('<table border="1" cellspacing="3">')
+		for(var i=1;i<=9;i++){
+			document.write('<tr>');
+			for(var j=1;j<=i;j++){
+				document.write('<td>')
+				document.write(i+'*'+j+'='+i*j);
+				document.write('</td>')
+			}
+		}
+		document.write('</table>');
+	</script>
+</body>
+</html>
